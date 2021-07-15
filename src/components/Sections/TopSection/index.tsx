@@ -10,8 +10,13 @@ export function TopSection() {
       bgRepeat="no-repeat"
       bgSize="cover"
     >
-      <Flex>
-        <Box p="4">
+      <Flex direction="row" justifyContent="space-between">
+        <Flex
+          mx={12}
+          pb={{ base: 10, md: 6 }}
+          direction="column"
+          justifyContent="center"
+        >
           <Heading color="base_white.200" fontSize="2.25rem" fontWeight="500">
             5 Continentes,
           </Heading>
@@ -29,16 +34,13 @@ export function TopSection() {
           <Text color="base_white.400" fontSize="1.25rem" fontWeight="400">
             sempre sonhou.
           </Text>
-        </Box>
-        <Spacer />
-        <Box p="4">
+        </Flex>
+        <Box mx={12}>
           <Image
-            boxSize="418px"
-            w="270px"
-            h="417px"
-            objectFit="cover"
+            objectFit="contain"
             src="/airplane.png"
-            alt="Segun Adebayo"
+            alt="Ignite World Trip"
+            mt={{ base: 10, md: 28 }}
           />
         </Box>
       </Flex>
