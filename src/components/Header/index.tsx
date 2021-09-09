@@ -5,7 +5,8 @@ export function Header() {
   return (
     <Flex
       as="header"
-      h={24}
+      py="3.125rem"
+      h="3.125rem"
       w="100%"
       bg="base_white.50"
       alignItems="center"

@@ -47,6 +47,22 @@ export const theme = extendTheme({
         bg: 'brand.400',
         color: 'gray.600',
       },
+      span: {
+        fontSize: '38px',
+        fontWeight: '500',
+        color: 'base_orange.400',
+        padding: '0.15rem',
+      },
     },
+  },
+})
+
+const overrides = extendTheme({
+  styles: {
+    global: (props) => ({
+      '.swiper-container': {
+        width: '300px',
+      },
+    }),
   },
 })

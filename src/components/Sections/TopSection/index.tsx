@@ -56,9 +56,7 @@ export function TopSection() {
             </Text>
           </VStack>
         </Flex>
-        {!isWideScreen ? (
-          'nome'
-        ) : (
+        {!isWideScreen ? null : (
           <Box mx={12} zIndex={10}>
             <Image
               src="/airplane.png"

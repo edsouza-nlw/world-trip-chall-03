@@ -1,14 +1,7 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  Image,
-  useBreakpointValue,
-  VStack,
-  Grid,
-  Divider,
-} from '@chakra-ui/react'
+import { Box, Flex, Text, Divider, useBreakpointValue } from '@chakra-ui/react'
+
+import { WideIconSection } from './wideScreen'
+import { MobilIconSection } from './mobilScreen'
 
 export function IconSection() {
   const isWideScreen = useBreakpointValue({
@@ -19,83 +12,22 @@ export function IconSection() {
   return (
     <Flex
       direction="column"
-      h={{ base: '10.1rem', md: '23.5rem' }}
-      py={{ base: '10.1rem', md: '5rem' }}
+      h={{ base: '26rem', md: '30.5rem' }}
+      py={{ base: '2rem', md: '5rem' }}
       bg="base_white.50"
     >
-      <Grid
-        templateColumns={{ base: 'repeat(5, 1fr)', md: 'repeat(5, 1fr)' }}
-        px={{ base: '10.1rem', md: '2rem' }}
-        gap={6}
-      >
-        <Box w="100%" align="center" justify="center">
-          <Image
-            src="/cocktail 1.png"
-            h="4rem"
-            w="4rem"
-            objectFit="contain"
-            objectPosition="center"
-            alt="Ignite World Trip"
-          />
-          <Text fontSize={{ base: '13px', md: '24px' }} pt={2} fontWeight="400">
-            vida noturna
-          </Text>
-        </Box>
-        <Box w="100%" align="center" justify="center">
-          <Image
-            src="/surf 1.png"
-            h="4rem"
-            w="4rem"
-            objectFit="contain"
-            objectPosition="center"
-            alt="Ignite World Trip"
-          />
-          <Text fontSize={{ base: '13px', md: '24px' }} pt={2} fontWeight="400">
-            praia
-          </Text>
-        </Box>
-        <Box w="100%" align="center" justify="center">
-          <Image
-            src="/building 1.png"
-            h="4rem"
-            w="4rem"
-            objectFit="contain"
-            objectPosition="center"
-            alt="Ignite World Trip"
-          />
-          <Text fontSize={{ base: '13px', md: '24px' }} pt={2} fontWeight="400">
-            moderno
-          </Text>
-        </Box>
-        <Box w="100%" align="center" justify="center">
-          <Image
-            src="/museum 1.png"
-            h="4rem"
-            w="4rem"
-            objectFit="contain"
-            objectPosition="center"
-            alt="Ignite World Trip"
-          />
-          <Text fontSize={{ base: '13px', md: '24px' }} pt={2} fontWeight="400">
-            clássico
-          </Text>
-        </Box>
-        <Box w="100%" align="center" justify="center">
-          <Image
-            src="/earth 1.png"
-            h="4rem"
-            w="4rem"
-            objectFit="contain"
-            objectPosition="center"
-            alt="Ignite World Trip"
-          />
-          <Text fontSize={{ base: '13px', md: '24px' }} pt={2} fontWeight="400">
-            e mais...
-          </Text>
-        </Box>
-      </Grid>
+      {isWideScreen ? <WideIconSection /> : <MobilIconSection />}
+
       <Box align="center" justify="center" py="2rem">
-        <Divider w="5.63rem" color="base_dark.200" />
+        <Divider w="5.63rem" sx={{ borderColor: 'base_dark.400' }} />
+      </Box>
+      <Box align="center" justify="center">
+        <Text fontSize={{ base: '20px', md: '36px' }} pt={2} fontWeight="400">
+          Vamos nessa?
+        </Text>
+        <Text fontSize={{ base: '20px', md: '36px' }} pt={2} fontWeight="400">
+          Então escolha seu continente
+        </Text>
       </Box>
     </Flex>
   )

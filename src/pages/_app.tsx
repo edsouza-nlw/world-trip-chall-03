@@ -7,6 +7,13 @@ import { theme } from '../styles/theme'
 import '@fontsource/poppins/500.css'
 import '@fontsource/poppins/400.css'
 
+import 'swiper/swiper-bundle.min.css'
+// import 'swiper/components/navigation/navigation.scss'
+// import 'swiper/components/pagination/pagination.scss'
+// import 'swiper/components/scrollbar/scrollbar.scss'
+//
+import '../styles/slider.css'
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>

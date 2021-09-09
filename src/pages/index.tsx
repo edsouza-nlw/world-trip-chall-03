@@ -1,10 +1,15 @@
 import Head from 'next/head'
-import { Box, Flex, Heading } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import { Header } from '../components/Header'
 import { TopSection } from '../components/Sections/TopSection'
 import { IconSection } from '../components/Sections/IconSections'
+import CarrouselSection from '../components/Carrousel'
+
+import db from '../../db.json'
 
 export default function Home() {
+  const { continents } = db
+
   return (
     <>
       <Head>
@@ -16,6 +21,7 @@ export default function Home() {
         <Header />
         <TopSection />
         <IconSection />
+        <CarrouselSection continents={continents} />
       </Flex>
     </>
   )
