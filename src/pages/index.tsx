@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Box, Flex, Heading } from '@chakra-ui/react'
 import { Header } from '../components/Header'
 import { TopSection } from '../components/Sections/TopSection'
+import { IconSection } from '../components/Sections/IconSections'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Flex direction="column" h="100vh">
         <Header />
         <TopSection />
+        <IconSection />
       </Flex>
     </>
   )

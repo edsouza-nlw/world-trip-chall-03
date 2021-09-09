@@ -4,8 +4,8 @@ import {
   Heading,
   Text,
   Image,
-  useBreakpointValue,
   VStack,
+  useBreakpointValue,
 } from '@chakra-ui/react'
 
 export function TopSection() {
@@ -26,7 +26,7 @@ export function TopSection() {
       <Flex direction="row" justifyContent="space-between">
         <Flex
           direction="column"
-          px={{ base: '1rem', md: '2rem' }}
+          px={{ base: '1rem', md: '3.6rem' }}
           py={{ base: '1.5rem', md: '6rem' }}
           justify="center"
         >
@@ -59,14 +59,14 @@ export function TopSection() {
         {!isWideScreen ? (
           'nome'
         ) : (
-          <Box mx={12}>
+          <Box mx={12} zIndex={10}>
             <Image
               src="/airplane.png"
               objectFit="contain"
               objectPosition="bottom left"
               h="16.9rem"
               w="29.4rem"
-              mt="10rem"
+              mt="8.8rem"
               alt="Ignite World Trip"
             />
           </Box>
