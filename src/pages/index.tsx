@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Flex } from '@chakra-ui/react'
 import { Header } from '../components/Header'
 import { TopSection } from '../components/Sections/TopSection'
-import { IconSection } from '../components/Sections/IconSections'
+import { IconSection } from '../components/Sections/IconSection'
 import CarrouselSection from '../components/Carrousel'
 
 import db from '../../db.json'
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>World Trip</title>
         <meta name="description" content="Generated for Rocket Seat Ignite" />
       </Head>
 

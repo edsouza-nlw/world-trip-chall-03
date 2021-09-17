@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 interface CarouselImageProps {
   id: number
+  slug: string
   image: string
   name: string
   description: string
@@ -10,12 +11,13 @@ interface CarouselImageProps {
 
 export default function CarouselImage({
   id,
+  slug,
   image,
   name,
   description,
 }: CarouselImageProps) {
   return (
-    <Link href={`continent/${id}`}>
+    <Link href={`continent/${slug}`}>
       <Flex
         backgroundImage={`url(${image})`}
         backgroundRepeat="no-repeat"
@@ -30,6 +32,7 @@ export default function CarouselImage({
           alignItems="center"
           direction="column"
           w="100%"
+          color="base_white.50"
         >
           <Text fontWeight="600" fontSize={['24px', '48px']}>
             {name}

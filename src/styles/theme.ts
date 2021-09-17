@@ -24,12 +24,13 @@ export const theme = extendTheme({
     },
     base_orange: {
       '400': '#FFBA08',
-      '50': '#FFF7EA',
+      '50': '#F5F8FA',
     },
     base_dark: {
       '400': '#000000',
       '300': '#47585B',
       '200': '#999999',
+      '100': '#fefefe',
     },
     base_white: {
       '400': '#DADADA',
@@ -54,15 +55,5 @@ export const theme = extendTheme({
         padding: '0.15rem',
       },
     },
-  },
-})
-
-const overrides = extendTheme({
-  styles: {
-    global: (props) => ({
-      '.swiper-container': {
-        width: '300px',
-      },
-    }),
   },
 })

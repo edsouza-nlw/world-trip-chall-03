@@ -21,7 +21,7 @@ export function IconSection() {
       <Box align="center" justify="center" py="2rem">
         <Divider w="5.63rem" sx={{ borderColor: 'base_dark.400' }} />
       </Box>
-      <Box align="center" justify="center">
+      <Box align="center" justify="center" color="base_dark.300">
         <Text fontSize={{ base: '20px', md: '36px' }} pt={2} fontWeight="400">
           Vamos nessa?
         </Text>
